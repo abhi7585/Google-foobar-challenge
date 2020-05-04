@@ -1,7 +1,7 @@
 def isprime(num):
     flag = True
     if num > 1:
-        for i in range(2, num//2):
+        for i in range(2, num):
             if (num % i) == 0:
                 flag = False
                 return False
@@ -13,7 +13,7 @@ def solution(n):
     prime = []
     i = 2
     result = []
-    while(len(prime) != 10005):
+    while(len(prime) != n + 5):
         if isprime(i) == True:
             prime.append(i)
         i += 1
