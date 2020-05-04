@@ -1,5 +1,13 @@
-from sympy import isprime
-
+def isprime(num):
+    flag = True
+    if num > 1:
+        for i in range(2, num//2):
+            if (num % i) == 0:
+                flag = False
+                return False
+                break
+        if flag == True:
+            return True
 
 def solution(n):
     prime = []
